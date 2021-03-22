@@ -1,0 +1,65 @@
+:root {
+  --primary-color: linear-gradient(
+    90deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%
+  );
+}
+
+// drop-shadow
+
+@mixin shadow {
+  -webkit-box-shadow: 6px 7px 40px -13px rgba(0,0,0,0.4);
+  -moz-box-shadow: 6px 7px 40px -13px rgba(0,0,0,0.4);
+  box-shadow: 6px 7px 40px -13px rgba(0,0,0,0.4);
+  
+
+}
+
+
+// phone reso
+
+$phone-view: 375px;
+
+// gradiant background color
+
+@mixin grad {
+  background: linear-gradient(
+    90deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%
+  );
+}
+
+// transition
+
+@mixin transition($x){
+  transition: $x;
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+}
+
+// Neutral
+
+$very-light-gray-blue: hsl(240, 78%, 98%);
+$light-gray-blue: hsl(234, 14%, 74%);
+$gray-blue: hsl(233, 13%, 49%);
+$dark-gray-blue: hsl(232, 13%, 33%);
+
+//font
+
+$main-font: "Montserrat", sans-serif;
+
+// mixins
+
+@mixin center-it {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// border color for the button mixin
+$button-border : 1px solid;

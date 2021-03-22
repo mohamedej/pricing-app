@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Cards from "./components/Cards";
+import Header from "./components/Header";
+import "./style/main.scss";
+import Bg1 from "../src/assets/images/bg-top.svg";
+import Bg2 from "../src/assets/images/bg-bottom.svg";
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="top-bg" src={Bg1} alt="bg" />
+      <img className="bottom-bg" src={Bg2} alt="bg2" />
+      <Header />
+      <Cards />
     </div>
   );
-}
+};
 
 export default App;

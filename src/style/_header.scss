@@ -1,0 +1,35 @@
+@import "./variables";
+
+// change display to flex and center items
+
+@mixin center-it {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  @include center-it;
+  flex-direction: column;
+  margin: 3em;
+  text-align: center;
+}
+
+.price-header {
+  color: $gray-blue;
+  margin-bottom: 1.0em;
+
+}
+
+.plan {
+  @include center-it();
+  margin: 5px;
+  padding: 0px 10px;
+}
+
+p {
+  font-size: 15px;
+  margin: 0em 1.5em;
+  color: $light-gray-blue;
+}

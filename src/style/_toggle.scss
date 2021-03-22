@@ -1,0 +1,47 @@
+.toggler {
+  display: flex;
+  width: 100%;
+  height: 1.5em;
+  width:2.7em;
+  background: var(--primary-color);
+  padding: 0.1em;
+  border-radius: 70px;
+  @media only screen and (max-width: 675px) {
+    background: $light-gray-blue;
+  }
+  @media only screen and (min-width: 675px) {
+    background: var(--primary-color);
+  }
+}
+.toggled {
+
+  @media only screen and (max-width: 675px) {
+    background: var(--primary-color);
+  }
+  @media only screen and (min-width: 675px) {
+    background: $light-gray-blue;
+  }
+}
+
+.ball-right {
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #fff; 
+  border-radius: 100%;
+  margin-left: 1.2em;
+  order: 2;
+  transition: margin-left 700ms ease;
+}
+
+.ball {
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: margin-left 700ms ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

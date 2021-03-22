@@ -5,7 +5,14 @@
       "dom",
       "dom.iterable",
       "esnext"
-    ],
+    ], 
+    // "paths": {
+    //   "@style/*" : ["style/*"],
+    //   "@components/*" : ["components/*"]
+    // }
+    
+    // ,
+    
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

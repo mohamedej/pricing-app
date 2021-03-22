@@ -1,0 +1,52 @@
+@import "./reseters";
+@import "./variables";
+@import "./header";
+@import "./toggle";
+@import "./cards";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+//images
+
+// $top-bg: url("../assets/images/bg-top.svg");
+$bottom-bg: url("../assets/images/bg-bottom.svg");
+
+// change display to flex and center items
+
+body {
+  font-family: $main-font;
+  background-color: $very-light-gray-blue;
+
+}
+
+.App {
+  @include center-it();
+  flex-direction: column;
+}
+
+
+.top-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  @media only screen and (max-width: 675px) {
+    height: 70%;
+    right: -6em;
+  }
+  @media only screen and (min-width: 675px) {
+  }
+
+}
+
+.bottom-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  @media only screen and (max-width: 675px) {
+    display: none;
+  }
+  @media only screen and (min-width: 675px) {
+  }
+
+}
